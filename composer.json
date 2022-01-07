@@ -1,0 +1,43 @@
+{
+    "name": "sourecode/menu-bundle",
+    "type": "symfony-bundle",
+    "description": "Build menus in services and render them in templates",
+    "keywords": ["symfony", "menu", "bundle"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Schilling",
+            "email": "jason@sourecode.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.0 || ^8.1",
+        "sourecode/menu": "dev-master",
+        "symfony/http-kernel": "^5.3 || ^6.0",
+        "symfony/config": "^5.3 || ^6.0",
+        "symfony/dependency-injection": "^5.3 || ^6.0",
+        "twig/twig": "^3.3"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "^5.3 || ^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SoureCode\\Bundle\\Menu\\": "src"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SoureCode\\Bundle\\Menu\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}

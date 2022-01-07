@@ -1,0 +1,10 @@
+twig:
+    path: '%kernel.project_dir%/templates'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    SoureCode\Bundle\Menu\Tests\App\:
+        resource: './App/'

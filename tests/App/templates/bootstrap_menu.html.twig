@@ -1,0 +1,15 @@
+{#- @var \SoureCode\Component\Menu\Model\MenuView menu -#}
+{#- @var \SoureCode\Component\Menu\Model\MenuItemView item -#}
+{% extends 'soure_code_menu.html.twig' %}
+
+{%- block menu -%}
+    {%- set list_attributes = {'class': 'nav flex-column'} -%}
+    {{ parent() }}
+{%- endblock menu -%}
+
+{%- block menu_item -%}
+    {%- set list_attributes = {'class': 'nav flex-column'} -%}
+    {%- set list_item_attributes = {'class': 'nav-item'} -%}
+    {%- set element_attributes = {'class': 'nav-link'} -%}
+    {{ parent() }}
+{%- endblock menu_item -%}
