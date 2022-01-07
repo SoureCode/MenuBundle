@@ -12,7 +12,9 @@ namespace SoureCode\Bundle\Menu\Tests;
 
 use Nyholm\BundleTest\TestKernel;
 use SoureCode\Bundle\Menu\SoureCodeMenuBundle;
+use SoureCode\Bundle\Menu\Tests\App\CompilerPass\AuthenticatorCompilerPass;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
+use Symfony\Bundle\SecurityBundle\SecurityBundle;
 use Symfony\Bundle\TwigBundle\TwigBundle;
 use Symfony\Component\HttpKernel\KernelInterface;
 
@@ -29,9 +31,11 @@ class MenuTestCase extends KernelTestCase
         $kernel = parent::createKernel($options);
 
         $kernel->addTestBundle(SoureCodeMenuBundle::class);
+        $kernel->addTestBundle(SecurityBundle::class);
         $kernel->addTestBundle(TwigBundle::class);
         $kernel->setTestProjectDir(__DIR__.'/App');
         $kernel->addTestConfig(__DIR__.'/config.yaml');
+        $kernel->addTestCompilerPass(new AuthenticatorCompilerPass());
         $kernel->handleOptions($options);
 
         return $kernel;

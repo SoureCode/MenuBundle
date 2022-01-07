@@ -40,6 +40,7 @@ return static function (ContainerConfigurator $container) {
         ->args([
             service('soure_code.menu.registry'),
             service('soure_code.menu.matcher'),
+            service('security.helper'),
         ])
         ->tag('twig.runtime');
 };
