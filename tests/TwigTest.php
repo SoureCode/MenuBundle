@@ -27,7 +27,7 @@ class TwigTest extends MenuTestCase
 Example foo bar
 
 <div class="test">
-    <nav><ol><li><span>Tee</span><ol><li><a href="https://green.tee.com"><span class="fa-check"></span> Green</a></li><li><a href="https://black.tee.com">Black</a></li></ol></li><li><span>Heros</span><ol><li><a href="https://superman.com">Superman</a></li><li><a href="https://batman.com">Batman</a></li></ol></li></ol></nav>
+    <ol><li><span>Tee</span><ol><li><a href="https://green.tee.com"><span class="fa-check"></span> Green</a></li><li><a href="https://black.tee.com">Black</a></li></ol></li><li><span>Heros</span><ol><li><a href="https://superman.com">Superman</a></li><li><a href="https://batman.com">Batman</a></li></ol></li></ol>
 </div>
 
 EOF, $output);
@@ -45,7 +45,7 @@ EOF, $output);
 Example foo bar
 
 <div class="test">
-    <nav><ol class="nav flex-column"><li class="nav-item"><span class="nav-link">Tee</span><ol class="nav flex-column"><li class="nav-item"><a class="nav-link" href="https://green.tee.com"><span class="fa fa-fw fa-check"></span> Green</a></li><li class="nav-item"><a class="nav-link" href="https://black.tee.com">Black</a></li></ol></li><li class="nav-item"><span class="nav-link">Heros</span><ol class="nav flex-column"><li class="nav-item"><a class="nav-link" href="https://superman.com">Superman</a></li><li class="nav-item"><a class="nav-link" href="https://batman.com">Batman</a></li></ol></li></ol></nav>
+    <ol class="nav flex-column"><li class="nav-item"><span class="nav-link">Tee</span><ol class="nav flex-column"><li class="nav-item"><a class="nav-link" href="https://green.tee.com"><span class="fa fa-fw fa-check"></span> Green</a></li><li class="nav-item"><a class="nav-link" href="https://black.tee.com">Black</a></li></ol></li><li class="nav-item"><span class="nav-link">Heros</span><ol class="nav flex-column"><li class="nav-item"><a class="nav-link" href="https://superman.com">Superman</a></li><li class="nav-item"><a class="nav-link" href="https://batman.com">Batman</a></li></ol></li></ol>
 </div>
 
 EOF, $output);

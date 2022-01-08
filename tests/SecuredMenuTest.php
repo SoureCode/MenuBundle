@@ -33,7 +33,7 @@ class SecuredMenuTest extends MenuTestCase
 Example foo bar
 
 <div class="test">
-    <nav><ol></ol></nav>
+    <ol></ol>
 </div>
 
 EOF, $output);
@@ -54,7 +54,7 @@ EOF, $output);
 Example foo bar
 
 <div class="test">
-    <nav><ol><li><span>Tee</span><ol><li><a href="https://green.tee.com">Green</a></li><li><a href="https://black.tee.com">Black</a></li></ol></li></ol></nav>
+    <ol><li><span>Tee</span><ol><li><a href="https://green.tee.com">Green</a></li><li><a href="https://black.tee.com">Black</a></li></ol></li></ol>
 </div>
 
 EOF, $output);
@@ -75,7 +75,7 @@ EOF, $output);
 Example foo bar
 
 <div class="test">
-    <nav><ol><li><span>Tee</span><ol><li><a href="https://green.tee.com">Green</a></li><li><a href="https://black.tee.com">Black</a></li></ol></li><li><span>Heros</span><ol><li><a href="https://superman.com">Superman</a></li><li><a href="https://batman.com">Batman</a></li></ol></li></ol></nav>
+    <ol><li><span>Tee</span><ol><li><a href="https://green.tee.com">Green</a></li><li><a href="https://black.tee.com">Black</a></li></ol></li><li><span>Heros</span><ol><li><a href="https://superman.com">Superman</a></li><li><a href="https://batman.com">Batman</a></li></ol></li></ol>
 </div>
 
 EOF, $output);
