@@ -25,6 +25,7 @@ class DemoMenu extends AbstractMenu
             ->addItem('Tee')
             ->addLinkItem('Green', 'https://green.tee.com')->setIcon('fa-check')->end()
             ->addLinkItem('Black', 'https://black.tee.com')->end()
+            ->appendDivider()
             ->root()
             ->addItem('Heros')
             ->addLinkItem('Superman', 'https://superman.com')->end()
