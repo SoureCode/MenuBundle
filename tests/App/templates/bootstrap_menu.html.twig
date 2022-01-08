@@ -2,17 +2,25 @@
 {#- @var \SoureCode\Component\Menu\Model\MenuItemView item -#}
 {% extends 'soure_code_menu.html.twig' %}
 
-{%- block menu -%}
+{%- block list -%}
     {%- set list_attributes = {'class': 'nav flex-column'} -%}
     {{ parent() }}
-{%- endblock menu -%}
+{%- endblock list -%}
 
-{%- block menu_item -%}
-    {%- set list_attributes = {'class': 'nav flex-column'} -%}
+{%- block list_item -%}
     {%- set list_item_attributes = {'class': 'nav-item'} -%}
-    {%- set element_attributes = {'class': 'nav-link'} -%}
     {{ parent() }}
-{%- endblock menu_item -%}
+{%- endblock list_item -%}
+
+{%- block text -%}
+    {%- set text_attributes = {'class': 'nav-link'} -%}
+    {{ parent() }}
+{%- endblock text -%}
+
+{%- block link -%}
+    {%- set link_attributes = {'class': 'nav-link'} -%}
+    {{ parent() }}
+{%- endblock link -%}
 
 {%- block icon -%}
     {%- set icon_attributes = {'class': 'fa fa-fw'} -%}
