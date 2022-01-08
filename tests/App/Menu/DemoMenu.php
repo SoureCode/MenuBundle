@@ -23,7 +23,7 @@ class DemoMenu extends AbstractMenu
         $menuBuilder
             ->setLabel('Demo Menu')
             ->addItem('Tee')
-            ->addLinkItem('Green', 'https://green.tee.com')->setIcon('fa fa-fw fa-check')->end()
+            ->addLinkItem('Green', 'https://green.tee.com')->setIcon('fa-check')->end()
             ->addLinkItem('Black', 'https://black.tee.com')->end()
             ->root()
             ->addItem('Heros')

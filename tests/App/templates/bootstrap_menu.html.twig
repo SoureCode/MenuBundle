@@ -13,3 +13,8 @@
     {%- set element_attributes = {'class': 'nav-link'} -%}
     {{ parent() }}
 {%- endblock menu_item -%}
+
+{%- block icon -%}
+    {%- set icon_attributes = {'class': 'fa fa-fw'} -%}
+    {{ parent() }}
+{%- endblock icon -%}
