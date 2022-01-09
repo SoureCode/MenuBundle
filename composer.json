@@ -13,6 +13,7 @@
     "require": {
         "php": "^8.0 || ^8.1",
         "sourecode/menu": "dev-master",
+        "sourecode/common-bundle": "dev-master",
         "symfony/http-kernel": "^5.3 || ^6.0",
         "symfony/config": "^5.3 || ^6.0",
         "symfony/dependency-injection": "^5.3 || ^6.0",

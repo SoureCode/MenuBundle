@@ -11,6 +11,7 @@
 namespace SoureCode\Bundle\Menu\Tests;
 
 use Nyholm\BundleTest\TestKernel;
+use SoureCode\Bundle\Common\SoureCodeCommonBundle;
 use SoureCode\Bundle\Menu\SoureCodeMenuBundle;
 use SoureCode\Bundle\Menu\Tests\App\CompilerPass\AuthenticatorCompilerPass;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
@@ -30,6 +31,7 @@ class MenuTestCase extends KernelTestCase
          */
         $kernel = parent::createKernel($options);
 
+        $kernel->addTestBundle(SoureCodeCommonBundle::class);
         $kernel->addTestBundle(SoureCodeMenuBundle::class);
         $kernel->addTestBundle(SecurityBundle::class);
         $kernel->addTestBundle(TwigBundle::class);
