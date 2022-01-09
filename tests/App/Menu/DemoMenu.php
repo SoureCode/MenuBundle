@@ -18,11 +18,13 @@ use SoureCode\Component\Menu\Builder\MenuBuilderInterface;
  */
 class DemoMenu extends AbstractMenu
 {
-    public function buildMenu(MenuBuilderInterface $menuBuilder): void
+    public function buildMenu(MenuBuilderInterface $menuBuilder, array $context = []): void
     {
+        $entityId = $context['entity_id'] ?? '';
+
         $menuBuilder
             ->setLabel('Demo Menu')
-            ->addItem('Tee')
+            ->addItem('Tee'.$entityId)
             ->addLinkItem('Green', 'https://green.tee.com')->setIcon('fa-check')->end()
             ->addLinkItem('Black', 'https://black.tee.com')->end()
             ->appendDivider()

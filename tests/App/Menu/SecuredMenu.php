@@ -18,7 +18,7 @@ use SoureCode\Component\Menu\Builder\MenuBuilderInterface;
  */
 class SecuredMenu extends AbstractMenu
 {
-    public function buildMenu(MenuBuilderInterface $menuBuilder): void
+    public function buildMenu(MenuBuilderInterface $menuBuilder, array $context = []): void
     {
         $menuBuilder
             ->setLabel('Secured Menu')
